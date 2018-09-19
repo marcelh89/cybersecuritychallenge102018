@@ -58,18 +58,45 @@ def createAllMutationsOfWord2(word):
         leftover = wordAsChars.copy()
         leftover.remove(key);
         elements = []
-        start = 0
-        end = len(leftover) - 1
-        print(leftover, start, end)
-        break
+        counter = 1
+
+        # add the leftover once, then start to mutate / shift array contents
+        #elements.append(leftover)
+        elements.append("".join(leftover))
+
+        while(counter < len(leftover)):
+
+            # to add leftover as splitted char array
+            # elements.append(shift(leftover, counter))
+
+            ### to add leftover as string
+            leftoverAsString = "".join(leftover)
+            elements.append(shiftLeft(leftoverAsString, counter))
+
+            counter+=1
+
+        # do the same as above for mirrored list of leftover
+        # TODO: this seems to be duplicate code like above - could be placed into seperate function
+        leftover = list(reversed(leftover))
+        elements.append("".join(leftover))
+        counter = 1
+        while (counter < len(leftover)):
+            # to add leftover as splitted char array
+            # elements.append(shift(leftover, counter))
+
+            ### to add leftover as string
+            leftoverAsString = "".join(leftover)
+            elements.append(shiftLeft(leftoverAsString, counter))
+
+            counter += 1
+
+        mutations[key] = elements
 
     return mutations
 
-print(createAllMutationsOfWord2("rsuf"))
-
 def mergeAllMutationsAsList(word):
     mutationsAsList = []
-    mutations = createAllMutationsOfWord(word)
+    mutations = createAllMutationsOfWord2(word)
     #print(mutations)
 
     #prefix all lists in the mutations with the keys (and turn out a list of lists with key prefixes)
