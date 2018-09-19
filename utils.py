@@ -1,3 +1,5 @@
+import collections
+
 def readFileIntoList(filename):
     with open(filename) as f:
         somevar = f.readlines()
@@ -94,6 +96,8 @@ def createAllMutationsOfWord2(word):
 
     return mutations
 
+#print(createAllMutationsOfWord2("essav"))
+
 def mergeAllMutationsAsList(word):
     mutationsAsList = []
     mutations = createAllMutationsOfWord2(word)
@@ -107,4 +111,10 @@ def mergeAllMutationsAsList(word):
     #make a flat list out of list of lists
     flat_list = [item for sublist in mutationsAsList for item in sublist]
     #print(flat_list)
-    return flat_list
+
+    #remove duplicates
+    ## TODO find out why we have duplicates
+    seen = set()
+    uniq = [x for x in flat_list if x not in seen and not seen.add(x)]
+
+    return uniq
