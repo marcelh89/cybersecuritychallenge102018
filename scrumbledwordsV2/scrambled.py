@@ -1,3 +1,4 @@
+import hashlib
 from scrumbledwords.utils import readFileIntoList, writeListIntoFileLineByLine
 
 #define vars
@@ -32,5 +33,10 @@ for word in scrambledwords:
 uncrambled = [possibleUnscrambled[key] for key in possibleUnscrambled.keys()]
 flat_list = [item for sublist in uncrambled for item in sublist]
 
-writeListIntoFileLineByLine("unscrambled-words.txt", flat_list)
+#writeListIntoFileLineByLine("unscrambled-words.txt", flat_list)
+
+unscrambledconcatenatedstring = "".join(flat_list).lower()
+hashedUnscrambled = hashlib.sha256(unscrambledconcatenatedstring.encode('utf-8'))
+print(hashedUnscrambled.hexdigest())
+
 
