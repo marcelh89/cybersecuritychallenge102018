@@ -23,7 +23,7 @@ extractFile()
 
     case $(file $1) in
         *"Zip"*)
-            command="unzip -f $1";;
+            command="unzip -fl $1";;
         *"bzip2"*)
             command="pbzip2 -d $1";;
         *"7-zip"*)

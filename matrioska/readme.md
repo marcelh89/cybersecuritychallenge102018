@@ -1,16 +1,29 @@
 ```file matrioska```
-matrioska: Zip archive data, at least v2.0 to extract
+unzip  manually --> bruteforce... :(
 
-unzip matrioska
+at the end get get 1 file "matrioska" 
 
-```file matrioska.tmp.kklgsp```
-
-matrioska.tmp.kklgsp: gzip compressed data, was "matrioska.tmp.EKdhx3", last modified: Tue Aug 28 08:44:32 2018, from Unix
-
-unzip and get matrioska.tmp.EKdhx3
-
-
--- go on with matrioska.tmp--
+```file matrioska```
+matrioska: DOS/MBR boot sector, code offset 0x3c+2, OEM-ID "mkfs.fat", 
+sectors/cluster 4, root entries 512, sectors 400 (volumes <=32 MB), 
+Media descriptor 0xf8, sectors/FAT 1, sectors/track 32, heads 64, 
+serial number 0xb4c0042a, unlabeled, FAT (12 bit)
 
 
-.. TODO build a script...
+```fdisk -l matrioska```
+Festplatte matrioska.img: 200 KiB, 204800 Bytes, 400 Sektoren
+Einheiten: Sektoren von 1 * 512 = 512 Bytes
+Sektorgröße (logisch/physikalisch): 512 Bytes / 512 Bytes
+E/A-Größe (minimal/optimal): 512 Bytes / 512 Bytes
+Festplattenbezeichnungstyp: dos
+Festplattenbezeichner: 0x00000000
+
+
+https://unix.stackexchange.com/questions/82314/how-to-find-the-type-of-an-img-file-and-mount-it
+
+
+mount device with ```sudo mount matrioska /mnt/tmp``` or use 7zip to open the content...
+
+README.txt..    Ah-ah, too late! I've already deleted the secret file!
+
+is of type MAR-archieve --> Mozilla ARchive

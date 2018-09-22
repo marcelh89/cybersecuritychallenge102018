@@ -1,0 +1,60 @@
+/lib/ld-linux.so.2
+^g:Q'Y
+libc.so.6
+_IO_stdin_used
+exit
+puts
+putchar
+stdin
+printf
+fgets
+strlen
+memset
+ptrace
+strcmp
+__libc_start_main
+__gmon_start__
+GLIBC_2.0
+PTRh
+Pj#h`
+[^_]
+No debugger please!
+#########################################################
+### Welcome to the "wysiNwyg" challenge!
+###     Your task is to find out the password to be able
+###     to decrypt the password-protected zip and read
+###     the secret flag. Good Luck!!
+#########################################################
+Password:
+s3cR3t_p4sSw0rD
+This is not the solution you are looking for :)
+Try again :(
+;*2$"
+GCC: (Debian 4.9.2-10) 4.9.2
+GCC: (Debian 4.8.4-1) 4.8.4
+.shstrtab
+.interp
+.note.ABI-tag
+.note.gnu.build-id
+.gnu.hash
+.dynsym
+.dynstr
+.gnu.version
+.gnu.version_r
+.rel.dyn
+.rel.plt
+.init
+.text
+.fini
+.rodata
+.eh_frame_hdr
+.eh_frame
+.init_array
+.fini_array
+.jcr
+.dynamic
+.got
+.got.plt
+.data
+.bss
+.comment

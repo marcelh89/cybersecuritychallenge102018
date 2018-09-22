@@ -2,14 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34cb3abc-9270-4826-ae8c-613cd57a0426" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/matrioska3/dev/shm/matrioska.tmp.qCMIg4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/matrioska3/output/dev/shm/matrioska.tmp.kklgsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/matrioska3/output/matrioska" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/matrioska3/testdata/bzip.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/greathost/wysiNwyg/readelf.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/greathost/wysiNwyg/strings" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexadoku/data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexadoku/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hexadoku/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/cybersecuritychallenge.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cybersecuritychallenge.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrioska3/dev/shm/matrioska.tmp.kklgsp" beforeDir="false" afterPath="$PROJECT_DIR$/matrioska3/dev/shm/matrioska.tmp.kklgsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/greathost/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/greathost/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/greathost/wysiNwyg/wysiNwyg" beforeDir="false" afterPath="$PROJECT_DIR$/greathost/wysiNwyg/wysiNwyg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hexadoku/hexadoku.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrioska/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/matrioska/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matrioska3/extract.sh" beforeDir="false" afterPath="$PROJECT_DIR$/matrioska3/extract.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrioska3/testdata/bzip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/typeit/node_modules/crypto-js/cipher-core.js" beforeDir="false" afterPath="$PROJECT_DIR$/typeit/node_modules/crypto-js/cipher-core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typeit/node_modules/crypto-js/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/typeit/node_modules/crypto-js/core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typeit/node_modules/crypto-js/crypto-js.js" beforeDir="false" afterPath="$PROJECT_DIR$/typeit/node_modules/crypto-js/crypto-js.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typeit/node_modules/crypto-js/x64-core.js" beforeDir="false" afterPath="$PROJECT_DIR$/typeit/node_modules/crypto-js/x64-core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/typeit/node_modules/cryptojs/lib/Rabbit.js" beforeDir="false" afterPath="$PROJECT_DIR$/typeit/node_modules/cryptojs/lib/Rabbit.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,6 +32,8 @@
     <SUITE FILE_PATH="coverage/cybersecuritychallenge$utils.coverage" NAME="utils Coverage Results" MODIFIED="1537381707492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cybersecuritychallenge$scrambledwords.coverage" NAME="scrambledwords Coverage Results" MODIFIED="1537440901878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrumbledwords" />
     <SUITE FILE_PATH="coverage/cybersecuritychallenge$scrumbledwords.coverage" NAME="scrumbledwords Coverage Results" MODIFIED="1537425512710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cybersecuritychallenge102018$utils.coverage" NAME="utils Coverage Results" MODIFIED="1537647770958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hexadoku" />
+    <SUITE FILE_PATH="coverage/cybersecuritychallenge102018$hexadoku.coverage" NAME="hexadoku Coverage Results" MODIFIED="1537647776387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hexadoku" />
     <SUITE FILE_PATH="coverage/cybersecuritychallenge$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1537543283549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/matrioska2" />
     <SUITE FILE_PATH="coverage/cybersecuritychallenge$main.coverage" NAME="main Coverage Results" MODIFIED="1537371655956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cybersecuritychallenge$warmap.coverage" NAME="warmap Coverage Results" MODIFIED="1537453253837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/warmap" />
@@ -91,23 +103,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/matrioska3/readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="97">
-                <caret line="44" selection-start-line="44" selection-end-line="44" />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hexadoku/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="55" column="4" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="extract.sh" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/matrioska3/extract.sh">
+      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hexadoku/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="74" column="31" lean-forward="true" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
+            <state relative-caret-position="293">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="codecs.py" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/lib64/python3.6/codecs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="308" selection-start-line="308" selection-end-line="308" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hexadoku/data.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrumbledwordsV2/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -127,6 +163,7 @@
       <find>fitness</find>
       <find>hashlib</find>
       <find>CCServer</find>
+      <find />
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -141,7 +178,6 @@
         <option value="$PROJECT_DIR$/utils.py" />
         <option value="$PROJECT_DIR$/sudoku/sudoku.py" />
         <option value="$PROJECT_DIR$/hexadoku/sudoku.py" />
-        <option value="$PROJECT_DIR$/hexadoku/hexadoku.py" />
         <option value="$PROJECT_DIR$/simple-opencv/test.py" />
         <option value="$PROJECT_DIR$/strangercode/blob-deminified.js" />
         <option value="$PROJECT_DIR$/strangercode/pw" />
@@ -163,14 +199,21 @@
         <option value="$PROJECT_DIR$/malwareinabottle/decompiled.py" />
         <option value="$PROJECT_DIR$/malwareinabottle/readme.md" />
         <option value="$PROJECT_DIR$/greathost/boomerang.c" />
-        <option value="$PROJECT_DIR$/greathost/readme.md" />
-        <option value="$PROJECT_DIR$/matrioska/readme.md" />
         <option value="$PROJECT_DIR$/matrioska2/main.y.py" />
         <option value="$PROJECT_DIR$/matrioska2/main.py" />
         <option value="$PROJECT_DIR$/matrioska3/readme.md" />
         <option value="$PROJECT_DIR$/warmap/base64decoded" />
         <option value="$PROJECT_DIR$/warmap/readme.md" />
         <option value="$PROJECT_DIR$/matrioska3/extract.sh" />
+        <option value="$PROJECT_DIR$/matrioska/readme.md" />
+        <option value="$PROJECT_DIR$/greathost/wysiNwyg/strings" />
+        <option value="$PROJECT_DIR$/greathost/wysiNwyg/readelf.txt" />
+        <option value="$PROJECT_DIR$/greathost/readme.md" />
+        <option value="$PROJECT_DIR$/hexadoku/data" />
+        <option value="$PROJECT_DIR$/hexadoku/data.txt" />
+        <option value="$PROJECT_DIR$/hexadoku/hexadoku.py" />
+        <option value="$PROJECT_DIR$/hexadoku/utils.py" />
+        <option value="$PROJECT_DIR$/hexadoku/main.py" />
       </list>
     </option>
   </component>
@@ -207,13 +250,12 @@
             <path>
               <item name="cybersecuritychallenge102018" type="b2602c69:ProjectViewProjectNode" />
               <item name="cybersecuritychallenge102018" type="462c0819:PsiDirectoryNode" />
-              <item name="matrioska3" type="462c0819:PsiDirectoryNode" />
+              <item name="hexadoku" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cybersecuritychallenge102018" type="b2602c69:ProjectViewProjectNode" />
               <item name="cybersecuritychallenge102018" type="462c0819:PsiDirectoryNode" />
-              <item name="matrioska3" type="462c0819:PsiDirectoryNode" />
-              <item name="output" type="462c0819:PsiDirectoryNode" />
+              <item name="scrumbledwordsV2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -253,7 +295,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main (1)">
+  <component name="RunManager" selected="Python.hexadoku">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="cybersecuritychallenge" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -287,6 +329,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/malwareinabottle/decompiled.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="hexadoku" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="cybersecuritychallenge" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hexadoku" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hexadoku/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -330,7 +391,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="scrambled" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="cybersecuritychallenge" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -338,50 +399,31 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scrumbledwordsV2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hexadoku" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrumbledwordsV2/scrambled.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="warmap" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="cybersecuritychallenge" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/warmap" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/warmap/warmap.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hexadoku/utils.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.scrambled" />
-      <item itemvalue="Python.warmap" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.decompiled" />
       <item itemvalue="Python.main (1)" />
+      <item itemvalue="Python.hexadoku" />
+      <item itemvalue="Python.utils" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.hexadoku" />
+        <item itemvalue="Python.utils" />
         <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.decompiled" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.warmap" />
-        <item itemvalue="Python.scrambled" />
       </list>
     </recent_temporary>
   </component>
@@ -412,27 +454,28 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49932885" weight="0.32907802" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.43307593" side_tool="true" visible="true" weight="0.49530202" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5057915" side_tool="true" visible="true" weight="0.3986577" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.63432837" weight="0.38720173" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49932885" weight="0.32907802" />
-      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.63375" weight="0.4140625" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.5669241" visible="true" weight="0.49530202" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2889318" />
+      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.63256115" weight="0.41342282" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7290862" weight="0.35436243" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.56435007" weight="0.22684564" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2927928" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4980695" weight="0.32885906" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.497426" weight="0.32885906" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.3991323" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" sideWeight="0.4993565" weight="0.32885906" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49420848" visible="true" weight="0.3986577" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="5" side_tool="true" visible="true" weight="0.13825503" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,7 +502,20 @@
           <line>29</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/hexadoku/main.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="19" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -472,6 +528,54 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/warmap/base64decoded">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="773" selection-start-column="773" selection-end-column="773" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warmap/WarMap.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/malwareinabottle/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="165">
+            <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matrioska3/extract.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="79" column="24" selection-start-line="79" selection-start-column="24" selection-end-line="79" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matrioska3/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="195">
+            <caret line="44" selection-start-line="44" selection-end-line="44" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrumbledwordsV2/scrambled.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/matrioska2/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -498,13 +602,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hexadoku/9232.png" />
     <entry file="file://$PROJECT_DIR$/poc/opencv.py" />
-    <entry file="file://$PROJECT_DIR$/hexadoku/hexadoku.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/strangercode/jsp4ck.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -572,13 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrumbledwordsV2/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrumbledwords/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -590,13 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrumbledwordsV2/scrambled.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="34" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -617,37 +700,10 @@
     <entry file="file://$PROJECT_DIR$/digintotheblood/hiddenbits4.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/malwareinabottle/decompiled.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="89" column="14" lean-forward="true" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
-          <folding>
-            <element signature="e#198#208#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/greathost/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="153">
-            <caret line="9" selection-start-line="9" selection-end-line="9" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/greathost/boomerang.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/matrioska/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -708,6 +764,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/malwareinabottle/decompiled.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1335">
+          <caret line="89" column="14" lean-forward="true" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
+          <folding>
+            <element signature="e#198#208#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/malwareinabottle/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -721,8 +787,8 @@
     <entry file="file://$PROJECT_DIR$/matrioska3/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="97">
-            <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <first_editor relative-caret-position="282">
+            <caret line="50" column="35" lean-forward="true" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
           </first_editor>
           <second_editor />
         </state>
@@ -730,8 +796,92 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/matrioska3/extract.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="74" column="31" lean-forward="true" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
+        <state relative-caret-position="232">
+          <caret line="64" column="16" lean-forward="true" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matrioska/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="405">
+            <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/greathost/wysiNwyg/strings">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/greathost/wysiNwyg/readelf.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="168" column="26" lean-forward="true" selection-start-line="168" selection-start-column="26" selection-end-line="168" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/greathost/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="270">
+            <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrumbledwordsV2/scrambled.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrumbledwordsV2/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hexadoku/data.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib64/python3.6/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="308" selection-start-line="308" selection-end-line="308" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hexadoku/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hexadoku/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="55" column="4" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
         </state>
       </provider>
     </entry>
