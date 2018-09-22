@@ -24,13 +24,15 @@
    |--------|---------|---------|--------|
 
 """
+import copy
+
 from hexadoku.utils import readFileIntoList, getRowNeighbors, getColumnNeighbors, getBlockNeighbors
 
 filecontent = readFileIntoList("data.txt")
 
 possiblecontents = filecontent[0]
 columns = [x for x in filecontent[1]]
-blocksize = filecontent[2]
+blocksize = int(filecontent[2])
 del filecontent[0]
 del filecontent[0]
 del filecontent[0]
@@ -50,19 +52,24 @@ emptyfields = {k: data.get(k) for k in data if data.get(k) == "."}
 
 
 for field in emptyfields.keys():
-    #get all row neighbors
-    rowNeighbors = getRowNeighbors(field, columns)
-    #remove data which is set by neighbors
 
+    # fill with all possible values
+    fieldvalues = [x for x in possiblecontents]
 
+    #and then reduce...
 
-    #get all column neighbors
-    columnNeighbors = getColumnNeighbors(field, rows)
-    #get all block neighbors
-    blockNeighbors = getBlockNeighbors(field, columns, rows, blocksize)
+    #get all neighbors
+    rowNeighborValues = getRowNeighbors(field, columns, data)
+    columnNeighborValues = getColumnNeighbors(field, rows, data)
+    blockNeighborValues = getBlockNeighbors(field, columns, rows, blocksize, data)
 
+    #merge neighbors
+    overallNeighbors = list(set(rowNeighborValues + columnNeighborValues + blockNeighborValues))
 
-## start remove data row-wise
-## start remove data calulate column-wise
-## start remove data calulate per block
+    #reduce possible items
 
+    tmp = list(set(fieldvalues)-set(overallNeighbors))
+
+    data[field] = tmp
+
+print()

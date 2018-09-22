@@ -8,19 +8,21 @@ def readFileIntoList(filename):
     return somevar
 
 
-def getRowNeighbors(field, columns):
+def getRowNeighbors(field, columns, data):
     column = field[0]
     row = field[1:]
-    leftovercolumns = [x + row for x in columns if x != column]
-    return [leftovercolumns]
+    rowNeighbors = [x + row for x in columns if x != column]
+    rowNeighborValues = [data[x + row] for x in columns if x != column and data[x + row] != '.' and not isinstance(data[x + row], list)]
+    return rowNeighborValues
 
-def getColumnNeighbors(field, rows):
+def getColumnNeighbors(field, rows, data):
     column = field[0]
     row = field[1:]
-    leftoverrows = [column + str(x) for x in rows if str(x) != row]
-    return [leftoverrows]
+    columnNeighbors = [column + str(x) for x in rows if str(x) != row]
+    columnNeighborValues = [data[column + str(x)] for x in rows if str(x) != row and data[column + str(x)] != '.' and not isinstance(data[column + str(x)], list)]
+    return columnNeighborValues
 
-def getBlockNeighbors(field, columns, rows, blocksize):
+def getBlockNeighbors(field, columns, rows, blocksize, data):
     column = field[0]
     row = field[1:]
 
@@ -42,7 +44,9 @@ def getBlockNeighbors(field, columns, rows, blocksize):
             neighbors.append(chr(itcol) + str(itrow))
     neighbors.remove(field)
 
-    return neighbors
+    neighborValues = [data[x] for x in neighbors if data[x] != '.' and not isinstance(data[x], list)]
+
+    return neighborValues
 
 
 #getBlockNeighbors("A1", [x for x in "ABCDEFGHIJKLMNOP"], [x for x in range(16)], 4)
