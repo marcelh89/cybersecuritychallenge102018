@@ -23,7 +23,7 @@ extractFile()
 
     case $(file $1) in
         *"Zip"*)
-            command="unzip $1";;
+            command="unzip -f $1";;
         *"bzip2"*)
             command="pbzip2 -d $1";;
         *"7-zip"*)
@@ -38,25 +38,45 @@ extractFile()
 
     echo $command
 
+    #enabled or disabled flag for executing command or just showing the command
+    if [ $2 -eq 1 ]
+    then
+        echo "executing command $command"
+        $command
+
+    fi
+
+
+
+
+
 }
 
 
 target="/home/marcman/PycharmProjects/cybersecuritychallenge102018/matrioska3"
+
+cd $target
+
+CURRENTDIR=$(pwd)
 #printfoldercontent $target
 
-startfile="$target/matrioska"
-#extractFile $startfile
+cp "matrioska" "output/matrioska"
 
+CURRENTDIR="$CURRENTDIR/output"
+cd $CURRENTDIR
+CURRENTDIR=$(pwd)
 
-echo "running test for extractFile"
-test7z="$target/testdata/7z"
-testbzip="$target/testdata/bzip"
-testgzip="$target/testdata/gzip"
-testmar="$target/testdata/mar"
-testzip="$target/testdata/zip"
+extractFile "$CURRENTDIR/matrioska" 1
 
-extractFile $test7z
-extractFile $testbzip
-extractFile $testgzip
-extractFile $testmar
-extractFile $testzip
+#echo "running test for extractFile"
+#test7z="$target/testdata/7z"
+#testbzip="$target/testdata/bzip"
+#testgzip="$target/testdata/gzip"
+#testmar="$target/testdata/mar"
+#testzip="$target/testdata/zip"
+
+#extractFile $test7z 0
+#extractFile $testbzip 0
+#extractFile $testgzip 0
+#extractFile $testmar 0
+#extractFile $testzip 0
