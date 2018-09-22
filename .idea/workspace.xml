@@ -2,37 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34cb3abc-9270-4826-ae8c-613cd57a0426" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/digintotheblood/hiddenbits3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/digintotheblood/hiddenbits4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/digintotheblood/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/greathost/boomerang.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/greathost/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/malwareinabottle/decompiled.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/matrioska/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/matrioska2/matrioska.tmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/matrioska2/tmp/start.bz2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/typeit/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/warmap/WarMap.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/warmap/warmap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/matrioska3/extract.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/matrioska3/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrumbledwordsV2/scrambled.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrumbledwordsV2/scrambled.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/cybersecuritychallenge$scrambledwords.coverage" NAME="scrambledwords Coverage Results" MODIFIED="1537440901878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrumbledwords" />
-    <SUITE FILE_PATH="coverage/cybersecuritychallenge$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1537543283549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/matrioska2" />
-    <SUITE FILE_PATH="coverage/cybersecuritychallenge$decompiled.coverage" NAME="decompiled Coverage Results" MODIFIED="1537530982586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/malwareinabottle" />
-    <SUITE FILE_PATH="coverage/cybersecuritychallenge$bruteforce.coverage" NAME="bruteforce Coverage Results" MODIFIED="1537382671454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cybersecuritychallenge$utils.coverage" NAME="utils Coverage Results" MODIFIED="1537381707492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cybersecuritychallenge$hexadoku.coverage" NAME="hexadoku Coverage Results" MODIFIED="1537433436659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hexadoku" />
+    <SUITE FILE_PATH="coverage/cybersecuritychallenge$scrambledwords.coverage" NAME="scrambledwords Coverage Results" MODIFIED="1537440901878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scrumbledwords" />
     <SUITE FILE_PATH="coverage/cybersecuritychallenge$scrumbledwords.coverage" NAME="scrumbledwords Coverage Results" MODIFIED="1537425512710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cybersecuritychallenge$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1537543283549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/matrioska2" />
     <SUITE FILE_PATH="coverage/cybersecuritychallenge$main.coverage" NAME="main Coverage Results" MODIFIED="1537371655956" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cybersecuritychallenge$warmap.coverage" NAME="warmap Coverage Results" MODIFIED="1537453253837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/warmap" />
+    <SUITE FILE_PATH="coverage/cybersecuritychallenge$bruteforce.coverage" NAME="bruteforce Coverage Results" MODIFIED="1537382671454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cybersecuritychallenge$hexadoku.coverage" NAME="hexadoku Coverage Results" MODIFIED="1537433436659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hexadoku" />
+    <SUITE FILE_PATH="coverage/cybersecuritychallenge$decompiled.coverage" NAME="decompiled Coverage Results" MODIFIED="1537530982586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/malwareinabottle" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1209464985">
@@ -96,23 +86,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/matrioska2/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/matrioska3/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="165">
+                <caret line="44" selection-start-line="44" selection-end-line="44" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/bz2.py">
+      <file leaf-file-name="extract.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/matrioska3/extract.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5865">
-              <caret line="349" column="41" selection-start-line="349" selection-start-column="41" selection-end-line="349" selection-end-column="41" />
+            <state relative-caret-position="257">
+              <caret line="61" column="20" lean-forward="true" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -172,6 +162,8 @@
         <option value="$PROJECT_DIR$/matrioska/readme.md" />
         <option value="$PROJECT_DIR$/matrioska2/main.y.py" />
         <option value="$PROJECT_DIR$/matrioska2/main.py" />
+        <option value="$PROJECT_DIR$/matrioska3/readme.md" />
+        <option value="$PROJECT_DIR$/matrioska3/extract.sh" />
       </list>
     </option>
   </component>
@@ -188,10 +180,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="width" value="799" />
+    <option name="height" value="872" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -204,19 +194,19 @@
         <subPane>
           <expand>
             <path>
-              <item name="cybersecuritychallenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cybersecuritychallenge" type="462c0819:PsiDirectoryNode" />
+              <item name="cybersecuritychallenge102018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cybersecuritychallenge102018" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="cybersecuritychallenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cybersecuritychallenge" type="462c0819:PsiDirectoryNode" />
-              <item name="matrioska2" type="462c0819:PsiDirectoryNode" />
+              <item name="cybersecuritychallenge102018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cybersecuritychallenge102018" type="462c0819:PsiDirectoryNode" />
+              <item name="matrioska3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="cybersecuritychallenge" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cybersecuritychallenge" type="462c0819:PsiDirectoryNode" />
-              <item name="matrioska2" type="462c0819:PsiDirectoryNode" />
-              <item name="tmp" type="462c0819:PsiDirectoryNode" />
+              <item name="cybersecuritychallenge102018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cybersecuritychallenge102018" type="462c0819:PsiDirectoryNode" />
+              <item name="matrioska3" type="462c0819:PsiDirectoryNode" />
+              <item name="testdata" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -231,17 +221,17 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\m.hinderlich\PycharmProjects\cybersecuritychallenge\matrioska2\tmp" />
-      <recent name="C:\Users\m.hinderlich\PycharmProjects\cybersecuritychallenge" />
-      <recent name="C:\Users\m.hinderlich\PycharmProjects\cybersecuritychallenge\scrumbledwords" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="C:\Users\m.hinderlich\PycharmProjects\cybersecuritychallenge\matrioska2" />
       <recent name="C:\Users\m.hinderlich\PycharmProjects\cybersecuritychallenge\digintotheblood" />
       <recent name="C:\Users\m.hinderlich\PycharmProjects\cybersecuritychallenge\scrumbledwordsV2" />
       <recent name="C:\Users\m.hinderlich\PycharmProjects\cybersecuritychallenge\strangercode" />
-      <recent name="C:\Users\m.hinderlich\PycharmProjects\cybersecuritychallenge\SnapSudoku" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\m.hinderlich\PycharmProjects\cybersecuritychallenge\matrioska2\tmp" />
+      <recent name="C:\Users\m.hinderlich\PycharmProjects\cybersecuritychallenge" />
+      <recent name="C:\Users\m.hinderlich\PycharmProjects\cybersecuritychallenge\scrumbledwords" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -275,9 +265,6 @@
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="decompiled" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="cybersecuritychallenge" />
@@ -297,14 +284,14 @@
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="cybersecuritychallenge" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/matrioska2" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -316,9 +303,6 @@
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="cybersecuritychallenge" />
@@ -338,9 +322,6 @@
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="scrambled" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="cybersecuritychallenge" />
@@ -360,9 +341,6 @@
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="warmap" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="cybersecuritychallenge" />
@@ -382,9 +360,6 @@
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.scrambled" />
@@ -426,31 +401,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="0" y="-1" width="1600" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14496644" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.63432837" weight="0.38720173" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.3991323" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49932885" weight="0.32907802" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49932885" weight="0.32907802" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.5698294" weight="0.18297872" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.43017057" side_tool="true" weight="0.26789588" />
-      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.74680173" visible="true" weight="0.4141844" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.43114543" side_tool="true" visible="true" weight="0.49932885" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.63432837" weight="0.38720173" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49932885" weight="0.32907802" />
+      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.63375" weight="0.4140625" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.5688546" visible="true" weight="0.49932885" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2889318" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946696" weight="0.3991323" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
       <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="5" side_tool="true" visible="true" weight="0.13825503" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,6 +465,13 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/matrioska2/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -698,18 +680,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/matrioska2/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="222">
+          <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/bz2.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/bz2.py" />
+    <entry file="file://$PROJECT_DIR$/matrioska3/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="165">
+            <caret line="44" selection-start-line="44" selection-end-line="44" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matrioska3/extract.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5865">
-          <caret line="349" column="41" selection-start-line="349" selection-start-column="41" selection-end-line="349" selection-end-column="41" />
+        <state relative-caret-position="257">
+          <caret line="61" column="20" lean-forward="true" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
         </state>
       </provider>
     </entry>
