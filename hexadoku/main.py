@@ -26,7 +26,7 @@
 """
 import copy
 
-from hexadoku.utils import readFileIntoList, getRowNeighbors, getColumnNeighbors, getBlockNeighbors
+from hexadoku.utils import readFileIntoList, getRowNeighbors, getColumnNeighbors, getBlockNeighbors, prettyprintHexadoku
 
 filecontent = readFileIntoList("data.txt")
 
@@ -50,6 +50,8 @@ for idx, row in enumerate(filecontent):
 
 emptyfields = {k: data.get(k) for k in data if data.get(k) == "."}
 
+print()
+prettyprintHexadoku(columns, rows, blocksize, data)
 
 for field in emptyfields.keys():
 
@@ -72,4 +74,3 @@ for field in emptyfields.keys():
 
     data[field] = tmp
 
-print()

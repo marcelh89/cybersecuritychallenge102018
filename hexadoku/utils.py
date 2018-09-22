@@ -1,4 +1,4 @@
-from bisect import bisect_left, bisect_right
+from io import StringIO
 
 
 def readFileIntoList(filename):
@@ -49,7 +49,46 @@ def getBlockNeighbors(field, columns, rows, blocksize, data):
     return neighborValues
 
 
+def prettyprintHexadoku(columns, rows, blocksize, data):
+    buf = StringIO()
+
+    header =   "      A B C D  E F G H  I J K L  M N O P"
+    splitrow = "     |--------|--------|--------|--------|"
+
+    buf.write(header)
+    buf.write("\n")
+
+
+    #it here
+    for row in rows:
+        if(row % blocksize == 0):
+            buf.write(splitrow)
+            buf.write("\n")
+        currentRow = ""
+        for idx,col in enumerate(columns):
+            if (idx == 0):
+                buf.write(str(row))
+                buf.write("    |" if len(str(row)) == 1 else "   |")
+            if (idx % blocksize == 0 and idx != 0):
+                buf.write("|")
+            buf.write(data[col+str(row)] + " ")
+        buf.write("|\n")
+
+
+    #it here
+
+
+    buf.write(splitrow)
+
+
+    tmp = buf.getvalue()
+    print(tmp)
+    return tmp
+
+
+
 #getBlockNeighbors("A1", [x for x in "ABCDEFGHIJKLMNOP"], [x for x in range(16)], 4)
 #getBlockNeighbors("E10", [x for x in "ABCDEFGHIJKLMNOP"], [x for x in range(16)], 4)
 #getBlockNeighbors("P15", [x for x in "ABCDEFGHIJKLMNOP"], [x for x in range(16)], 4)
+
 
