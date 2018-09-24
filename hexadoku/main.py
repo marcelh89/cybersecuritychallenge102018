@@ -26,7 +26,8 @@
 """
 import copy
 
-from hexadoku.utils import readFileIntoList, getRowNeighbors, getColumnNeighbors, getBlockNeighbors, prettyprintHexadoku
+from hexadoku.utils import readFileIntoList, getRowNeighbors, getColumnNeighbors, getBlockNeighbors, \
+    prettyprintHexadoku, getBlocks
 
 filecontent = readFileIntoList("data.txt")
 
@@ -42,9 +43,9 @@ rows = [x for x in range(len(filecontent))]
 ## get initial data and load it into variable
 data = {}
 for idx, row in enumerate(filecontent):
-    rowkey = str(columns[idx])
+    rowkey = str(idx)
     for idx, entry in enumerate(row):
-        key = rowkey+str(idx)
+        key = str(columns[idx])+rowkey
         data[key] = entry #if entry != "." else possiblecontents
 
 
@@ -58,8 +59,6 @@ for field in emptyfields.keys():
     # fill with all possible values
     fieldvalues = [x for x in possiblecontents]
 
-    #and then reduce...
-
     #get all neighbors
     rowNeighborValues = getRowNeighbors(field, columns, data)
     columnNeighborValues = getColumnNeighbors(field, rows, data)
@@ -72,5 +71,18 @@ for field in emptyfields.keys():
 
     tmp = list(set(fieldvalues)-set(overallNeighbors))
 
-    data[field] = tmp
+    if (len(tmp) == 1):
+        data[field] = field[0]
+    else:
+        data[field] = tmp
 
+print()
+prettyprintHexadoku(columns, rows, blocksize, data)
+
+
+## TODO look for block with the least dot entries / entries of type list)
+getBlocks(columns, rows, blocksize)
+
+## sort blocks by least dot entries
+
+print()

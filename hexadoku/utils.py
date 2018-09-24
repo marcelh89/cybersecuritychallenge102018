@@ -71,7 +71,7 @@ def prettyprintHexadoku(columns, rows, blocksize, data):
                 buf.write("    |" if len(str(row)) == 1 else "   |")
             if (idx % blocksize == 0 and idx != 0):
                 buf.write("|")
-            buf.write(data[col+str(row)] + " ")
+            buf.write((data[col+str(row)] if not isinstance(data[col+str(row)], list) else '.' )+ " ")
         buf.write("|\n")
 
 
@@ -85,6 +85,31 @@ def prettyprintHexadoku(columns, rows, blocksize, data):
     print(tmp)
     return tmp
 
+def getBlocks(columns, rows, blocksize):
+    blocks = []
+    rowBoundaries = [(x, x+blocksize-1) for x in range(0, len(rows), blocksize)]
+    columnBoundaries = [(columns[x], columns[x+blocksize-1]) for x in range(0, len(columns), blocksize)]
+    merged = []
+    for row in rowBoundaries:
+        for col in columnBoundaries:
+            merged.append(((col[0]+str(row[0]),col[1]+str(row[1]))))
+
+    print()
+
+
+
+
+
+# A0-D3 E0-H3 I0-L3 M0-P3
+# A4-D7 E4-H7 I4-L7 M4-P7
+# A8-D11 E8-H11 I8-L11 M8-L11
+# A12-D15 E12-H15 I12-L15 M11-L15
+
+
+
+
+
+getBlocks([x for x in "ABCDEFGHIJKLMNOP"], [x for x in range(16)], 4)
 
 
 #getBlockNeighbors("A1", [x for x in "ABCDEFGHIJKLMNOP"], [x for x in range(16)], 4)
