@@ -24,65 +24,13 @@
    |--------|---------|---------|--------|
 
 """
-import copy
 
-from hexadoku.utils import readFileIntoList, getRowNeighbors, getColumnNeighbors, getBlockNeighbors, \
-    prettyprintHexadoku, getBlocks
+from hexadoku.utils import Hexadoku
 
-filecontent = readFileIntoList("data.txt")
+hexadoku = Hexadoku("data.txt")
+hexadoku.prettyprint()
 
-possiblecontents = filecontent[0]
-columns = [x for x in filecontent[1]]
-blocksize = int(filecontent[2])
-del filecontent[0]
-del filecontent[0]
-del filecontent[0]
+hexadoku.calculate()
 
-rows = [x for x in range(len(filecontent))]
-
-## get initial data and load it into variable
-data = {}
-for idx, row in enumerate(filecontent):
-    rowkey = str(idx)
-    for idx, entry in enumerate(row):
-        key = str(columns[idx])+rowkey
-        data[key] = entry #if entry != "." else possiblecontents
-
-
-emptyfields = {k: data.get(k) for k in data if data.get(k) == "."}
-
-print()
-prettyprintHexadoku(columns, rows, blocksize, data)
-
-for field in emptyfields.keys():
-
-    # fill with all possible values
-    fieldvalues = [x for x in possiblecontents]
-
-    #get all neighbors
-    rowNeighborValues = getRowNeighbors(field, columns, data)
-    columnNeighborValues = getColumnNeighbors(field, rows, data)
-    blockNeighborValues = getBlockNeighbors(field, columns, rows, blocksize, data)
-
-    #merge neighbors
-    overallNeighbors = list(set(rowNeighborValues + columnNeighborValues + blockNeighborValues))
-
-    #reduce possible items
-
-    tmp = list(set(fieldvalues)-set(overallNeighbors))
-
-    if (len(tmp) == 1):
-        data[field] = field[0]
-    else:
-        data[field] = tmp
-
-print()
-prettyprintHexadoku(columns, rows, blocksize, data)
-
-
-## TODO look for block with the least dot entries / entries of type list)
-getBlocks(columns, rows, blocksize)
-
-## sort blocks by least dot entries
-
+hexadoku.prettyprint()
 print()
