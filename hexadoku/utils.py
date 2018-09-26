@@ -45,9 +45,13 @@ class Hexadoku:
         column = field[0]
         row = field[1:]
         rowNeighbors = [x + row for x in columns if x != column]
-        rowNeighborValues = [data[x + row] for x in columns if x != column and data[x + row] != '.' and not isinstance(data[x + row], list)]
+        rowNeighborValues = [data[x] for x in rowNeighbors if data[x] != '.' and not isinstance(data[x], list)]
 
-        rowNeighborValuesFromLists = [data[x + row] for x in columns if x != column and data[x + row] != '.' and isinstance(data[x + row], list)]
+        # TODO remove this
+        notallowed = ['G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P']
+        notallowedForColumns = [x for x in rowNeighborValues if x in notallowed]
+
+        rowNeighborValuesFromLists = [data[x] for x in rowNeighbors if data[x] != '.' and isinstance(data[x], list)]
         flatList = [item for sublist in rowNeighborValuesFromLists for item in sublist]
 
         rowNeighborValues.extend(x for x in flatList if x not in rowNeighborValues)
@@ -61,9 +65,13 @@ class Hexadoku:
         column = field[0]
         row = field[1:]
         columnNeighbors = [column + str(x) for x in rows if str(x) != row]
-        columnNeighborValues = [data[column + str(x)] for x in rows if str(x) != row and data[column + str(x)] != '.' and not isinstance(data[column + str(x)], list)]
+        columnNeighborValues = [data[x] for x in columnNeighbors if data[x] != '.' and not isinstance(data[x], list)]
 
-        columnNeighborValuesFromLists = [data[column + str(x)] for x in rows if str(x) != row and data[column + str(x)] == '.' and isinstance(data[column + str(x)], list)]
+        #TODO remove this
+        notallowed = ['G', 'H', 'I', 'J', 'K', 'L', 'M','N', 'O', 'P']
+        notallowedForColumns = [x for x in columnNeighborValues if x in notallowed]
+
+        columnNeighborValuesFromLists = [data[x] for x in columnNeighbors if data[x] != '.' and isinstance(data[x], list)]
         flatList = [item for sublist in columnNeighborValuesFromLists for item in sublist]
 
         columnNeighborValues.extend(x for x in flatList if x not in columnNeighborValues)
@@ -99,11 +107,15 @@ class Hexadoku:
 
         neighborValues = [data[x] for x in neighbors if data[x] != '.' and not isinstance(data[x], list)]
 
+        # TODO remove this
+        notallowed = ['G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P']
+        notallowedForColumns = [x for x in neighborValues if x in notallowed]
+
         neighborValuesFromLists = [data[x] for x in neighbors if data[x] == '.' and isinstance(data[x], list)]
 
         flatList = [item for sublist in neighborValuesFromLists for item in sublist]
 
-        neighborValuesFromLists.extend(x for x in flatList if x not in neighborValuesFromLists)
+        neighborValues.extend(x for x in flatList if x not in neighborValuesFromLists)
 
         return neighborValues
 
@@ -176,20 +188,33 @@ class Hexadoku:
 
             # get all neighbors
             rowNeighborValues = self.getRowNeighbors(field)
+            rowNeighborValues.sort()
             columnNeighborValues = self.getColumnNeighbors(field)
+            columnNeighborValues.sort()
             blockNeighborValues = self.getBlockNeighbors(field)
+            blockNeighborValues.sort()
+
+            notallowed = ['G', 'H', 'I', 'J', 'K', 'L', 'M','N', 'O', 'P']
+
+            notallowedForColumns = [x for x in columnNeighborValues if x in notallowed]
+            notallowedForRows= [x for x in rowNeighborValues if x in notallowed]
+            notallowedForBlocks = [x for x in blockNeighborValues if x in notallowed]
+
+
 
             # merge neighbors
-            overallNeighbors = list(set(rowNeighborValues + columnNeighborValues + blockNeighborValues))
+            overallNeighbors = list(set(rowNeighborValues) | set(columnNeighborValues) | set(blockNeighborValues))
 
             # reduce possible items
 
             tmp = list(set(fieldvalues) - set(overallNeighbors))
 
             if (len(tmp) == 1):
-                self.data[field] = field[0]
+                self.data[field] = self.data[field][0]
             else:
                 self.data[field] = tmp
+
+
 
         while(True):
             block = self.getBlockWithLeastEmptyFields()
@@ -215,14 +240,14 @@ class Hexadoku:
             blockNeighborValues = self.getBlockNeighbors(field)
 
             # merge neighbors
-            overallNeighbors = list(set(rowNeighborValues + columnNeighborValues + blockNeighborValues))
+            overallNeighbors = list(set(rowNeighborValues) | set(columnNeighborValues) | set(blockNeighborValues))
 
             # reduce possible items
 
             tmp = list(set(fieldvalues) - set(overallNeighbors))
 
             if (len(tmp) == 1):
-                self.data[field] = field[0]
+                self.data[field] = self.data[field][0]
             else:
                 self.data[field] = tmp
 
@@ -272,5 +297,9 @@ class Block:
 #getBlockNeighbors("A1", [x for x in "ABCDEFGHIJKLMNOP"], [x for x in range(16)], 4)
 #getBlockNeighbors("E10", [x for x in "ABCDEFGHIJKLMNOP"], [x for x in range(16)], 4)
 #getBlockNeighbors("P15", [x for x in "ABCDEFGHIJKLMNOP"], [x for x in range(16)], 4)
+
+
+
+
 
 

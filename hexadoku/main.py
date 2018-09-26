@@ -29,8 +29,10 @@ from hexadoku.utils import Hexadoku
 
 hexadoku = Hexadoku("data.txt")
 hexadoku.prettyprint()
+print()
 
 hexadoku.calculate()
+#print()
 
 hexadoku.prettyprint()
 print()
