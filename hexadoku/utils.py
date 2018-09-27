@@ -36,10 +36,9 @@ class Hexadoku:
                 key = str(self.columns[idx]) + rowkey
                 self.data[key] = entry  # if entry != "." else possiblecontents
 
-
     def getEmptyFields(self):
         return {k: self.data.get(k) for k in self.data if
-                            self.data.get(k) == "." or isinstance(self.data.get(k), list)}
+                self.data.get(k) == "." or isinstance(self.data.get(k), list)}
 
     def getRowNeighbors(self, field):
 
@@ -185,7 +184,6 @@ class Hexadoku:
 
         self.data = tmpdata
 
-
     def solve(self):
 
         while (True):
@@ -199,14 +197,39 @@ class Hexadoku:
             else:
                 self.calculate()
 
-            dataHasNoListOrEmptyFields = all(self.data[x] != '.' and not isinstance(self.data[x], list) for x in self.data.keys())
+            dataHasNoListOrEmptyFields = all(
+                self.data[x] != '.' and not isinstance(self.data[x], list) for x in self.data.keys())
 
             if dataHasNoListOrEmptyFields:
                 break
 
-    def getHashedSolutionString(self):
+    # check if all conditions of a filled hexadoku are fulfilled
+    def checkConsistency(self):
+        consistent = {}
+        for block in self.getBlocks(self.data):
 
-        #iterate through rows and concat them
+            possiblecontents = copy.copy(self.possiblecontents)
+
+            for cellKey in block.data.keys():
+
+                if block.data[cellKey] in possiblecontents:
+                    element = block.data[cellKey]
+                    possiblecontents = possiblecontents.replace(element, '')
+
+                    if len(possiblecontents) == 0:
+                        consistent[cellKey] = True
+
+                elif len(possiblecontents) == 0:
+                    consistent[cellKey] = True
+                else:
+                    consistent[cellKey] = False
+                    break
+        allconsistent = all(consistent[x] == True for x in consistent.keys())
+        return allconsistent
+
+
+    def getHashedSolutionString(self):
+        # iterate through rows and concat them
         concat = []
         for row in self.rows:
             for col in self.columns:
@@ -216,6 +239,7 @@ class Hexadoku:
 
         hashedHexadoku = hashlib.sha256(''.join(concatToLower).encode('utf-8'))
         return hashedHexadoku.hexdigest()
+
 
 class Block:
     def __init__(self, name, coordinates, data):  # e.g. (A,0,D,3) or (A,12,D,15)

@@ -40,4 +40,8 @@ print("----------------------solve done----------------------")
 
 print()
 
+print("hexadoku.checkConsistency()" + str(hexadoku.checkConsistency()))
+
+
+
 print(hexadoku.getHashedSolutionString())
