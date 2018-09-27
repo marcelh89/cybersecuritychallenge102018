@@ -186,22 +186,22 @@ class Hexadoku:
         self.data = tmpdata
 
 
-#TODO make block == None work - currently it is not set, seems that the block.getEmptyFields is not updated
     def solve(self):
-        counter = 0
+
         while (True):
 
             block = self.getBlockWithLeastEmptyFields()
             print()
 
-            counter += 1
-
+            # TODO block seems never to get None (but at the end dataHasNoListOrEmptyFields makes while loop break correctly
             if (block == None):
                 break
             else:
                 self.calculate()
 
-            if counter == 14:
+            dataHasNoListOrEmptyFields = all(self.data[x] != '.' and not isinstance(self.data[x], list) for x in self.data.keys())
+
+            if dataHasNoListOrEmptyFields:
                 break
 
     def getHashedSolutionString(self):
