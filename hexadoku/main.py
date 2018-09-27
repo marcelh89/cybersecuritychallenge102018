@@ -33,12 +33,6 @@ hexadoku.prettyprint()
 print("----------------------load done----------------------")
 print()
 
-print("----------------------initialcCalculation start----------------------")
-hexadoku.initialcCalculation()
-hexadoku.prettyprint()
-print("----------------------initialcCalculation done----------------------")
-print()
-
 print("----------------------solve start----------------------")
 hexadoku.solve()
 hexadoku.prettyprint()

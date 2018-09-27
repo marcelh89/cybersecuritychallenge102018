@@ -50,15 +50,6 @@ class Hexadoku:
         rowNeighbors = [x + row for x in columns if x != column]
         rowNeighborValues = [data[x] for x in rowNeighbors if data[x] != '.' and not isinstance(data[x], list)]
 
-        # TODO remove this
-        notallowed = ['G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P']
-        notallowedForColumns = [x for x in rowNeighborValues if x in notallowed]
-
-        #rowNeighborValuesFromLists = [data[x] for x in rowNeighbors if data[x] != '.' and isinstance(data[x], list)]
-        #flatList = [item for sublist in rowNeighborValuesFromLists for item in sublist]
-
-        #rowNeighborValues.extend(x for x in flatList if x not in rowNeighborValues)
-
         return rowNeighborValues
 
     def getColumnNeighbors(self, field):
@@ -69,11 +60,6 @@ class Hexadoku:
         row = field[1:]
         columnNeighbors = [column + str(x) for x in rows if str(x) != row]
         columnNeighborValues = [data[x] for x in columnNeighbors if data[x] != '.' and not isinstance(data[x], list)]
-
-        #columnNeighborValuesFromLists = [data[x] for x in columnNeighbors if data[x] != '.' and isinstance(data[x], list)]
-        #flatList = [item for sublist in columnNeighborValuesFromLists for item in sublist]
-
-        #columnNeighborValues.extend(x for x in flatList if x not in columnNeighborValues)
 
         return columnNeighborValues
 
@@ -105,10 +91,6 @@ class Hexadoku:
         neighbors.remove(field)
 
         neighborValues = [data[x] for x in neighbors if data[x] != '.' and not isinstance(data[x], list)]
-
-        #neighborValuesFromLists = [data[x] for x in neighbors if data[x] == '.' and isinstance(data[x], list)]
-        #flatList = [item for sublist in neighborValuesFromLists for item in sublist]
-        #neighborValues.extend(x for x in flatList if x not in neighborValuesFromLists)
 
         return neighborValues
 
@@ -169,13 +151,10 @@ class Hexadoku:
         else:
             return None
 
-    def initialcCalculation(self):
+    def calculate(self):
 
         tmpdata = copy.deepcopy(self.data)
 
-        """
-            initial calculation
-        """
         for field in self.getEmptyFields().keys():
 
             # fill with all possible values
@@ -188,13 +167,6 @@ class Hexadoku:
             columnNeighborValues.sort()
             blockNeighborValues = self.getBlockNeighbors(field)
             blockNeighborValues.sort()
-
-            """ only for debug
-            notallowed = ['G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P']
-            notallowedForColumns = [x for x in columnNeighborValues if x in notallowed]
-            notallowedForRows = [x for x in rowNeighborValues if x in notallowed]
-            notallowedForBlocks = [x for x in blockNeighborValues if x in notallowed]
-            """
 
             # merge neighbors
             overallNeighbors = list(set(rowNeighborValues) | set(columnNeighborValues) | set(blockNeighborValues))
@@ -212,15 +184,11 @@ class Hexadoku:
 
         self.data = tmpdata
 
+
+#TODO make block == None work - currently it is not set, seems that the block.getEmptyFields is not updated
     def solve(self):
-        """
-           further calculation
-        """
         counter = 0
         while (True):
-
-            if counter == 14:
-                print()
 
             block = self.getBlockWithLeastEmptyFields()
             print()
@@ -230,41 +198,10 @@ class Hexadoku:
             if (block == None):
                 break
             else:
-                self.initialcCalculation()
+                self.calculate()
 
-            if counter == 15:
+            if counter == 13:
                 break
-
-    """
-    def solveBlock(self, block):
-
-        tmpdata = copy.deepcopy(self.data)
-
-        for field in block.emptyFields:
-
-            # fill with all possible values
-            fieldvalues = [x for x in self.possiblecontents]
-
-            # get all neighbors
-            rowNeighborValues = self.getRowNeighbors(field)
-            columnNeighborValues = self.getColumnNeighbors(field)
-            blockNeighborValues = self.getBlockNeighbors(field)
-
-            # merge neighbors
-            overallNeighbors = list(set(rowNeighborValues) | set(columnNeighborValues) | set(blockNeighborValues))
-
-            # reduce possible items
-
-            tmp = list(set(fieldvalues) - set(overallNeighbors))
-
-            if (len(tmp) == 1):
-                tmpdata[field] = tmp[0]
-                print("filled " + field + " with " + tmp[0])
-            else:
-                tmpdata[field] = tmp
-                print("filled " + field + " with " + str(tmp))
-
-    """
 
 class Block:
     def __init__(self, name, coordinates, data):  # e.g. (A,0,D,3) or (A,12,D,15)
@@ -291,16 +228,3 @@ class Block:
 
     def __str__(self):
         return self.name + " / " + self.getEmptyFields()
-
-# A0-D3 E0-H3 I0-L3 M0-P3
-# A4-D7 E4-H7 I4-L7 M4-P7
-# A8-D11 E8-H11 I8-L11 M8-L11
-# A12-D15 E12-H15 I12-L15 M11-L15
-
-
-# getBlocks([x for x in "ABCDEFGHIJKLMNOP"], [x for x in range(16)], 4)
-
-
-# getBlockNeighbors("A1", [x for x in "ABCDEFGHIJKLMNOP"], [x for x in range(16)], 4)
-# getBlockNeighbors("E10", [x for x in "ABCDEFGHIJKLMNOP"], [x for x in range(16)], 4)
-# getBlockNeighbors("P15", [x for x in "ABCDEFGHIJKLMNOP"], [x for x in range(16)], 4)
