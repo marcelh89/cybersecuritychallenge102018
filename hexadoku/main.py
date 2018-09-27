@@ -28,11 +28,20 @@
 from hexadoku.utils import Hexadoku
 
 hexadoku = Hexadoku("data.txt")
+print("----------------------load start----------------------")
 hexadoku.prettyprint()
+print("----------------------load done----------------------")
 print()
 
-hexadoku.calculate()
-#print()
-
+print("----------------------initialcCalculation start----------------------")
+hexadoku.initialcCalculation()
 hexadoku.prettyprint()
+print("----------------------initialcCalculation done----------------------")
+print()
+
+print("----------------------solve start----------------------")
+hexadoku.solve()
+hexadoku.prettyprint()
+print("----------------------solve done----------------------")
+
 print()
