@@ -1,4 +1,5 @@
 import copy
+import hashlib
 from io import StringIO
 
 
@@ -200,8 +201,21 @@ class Hexadoku:
             else:
                 self.calculate()
 
-            if counter == 13:
+            if counter == 14:
                 break
+
+    def getHashedSolutionString(self):
+
+        #iterate through rows and concat them
+        concat = []
+        for row in self.rows:
+            for col in self.columns:
+                concat.append(self.data[col + str(row)])
+
+        concatToLower = [x.lower() for x in concat]
+
+        hashedHexadoku = hashlib.sha256(''.join(concatToLower).encode('utf-8'))
+        return hashedHexadoku.hexdigest()
 
 class Block:
     def __init__(self, name, coordinates, data):  # e.g. (A,0,D,3) or (A,12,D,15)

@@ -1,4 +1,3 @@
-
 """
     A B C D   E F G H   I J K L   M N O P
    |--------|---------|---------|--------|
@@ -25,6 +24,7 @@
 
 """
 
+import hashlib
 from hexadoku.utils import Hexadoku
 
 hexadoku = Hexadoku("data.txt")
@@ -39,3 +39,5 @@ hexadoku.prettyprint()
 print("----------------------solve done----------------------")
 
 print()
+
+print(hexadoku.getHashedSolutionString())
