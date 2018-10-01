@@ -40,8 +40,5 @@ print("----------------------solve done----------------------")
 
 print()
 
-print("hexadoku.checkConsistency()" + str(hexadoku.checkConsistency()))
-
-
-
-print(hexadoku.getHashedSolutionString())
+# NOTE task was to lowercase the sha256 hash but seems to be already lowercase...
+print("hexadoku.checkConsistency()" + str(hexadoku.getHashString(hexadoku.getConcatenatedRows())))

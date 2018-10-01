@@ -228,16 +228,28 @@ class Hexadoku:
         return allconsistent
 
 
-    def getHashedSolutionString(self):
+    def getConcatenatedRows(self):
         # iterate through rows and concat them
         concat = []
         for row in self.rows:
             for col in self.columns:
                 concat.append(self.data[col + str(row)])
+        print("".join(concat))
+        return "".join(concat)
 
-        concatToLower = [x.lower() for x in concat]
 
-        hashedHexadoku = hashlib.sha256(''.join(concatToLower).encode('utf-8'))
+    def getConcatenatedCols(self):
+        # iterate through rows and concat them
+        concat = []
+        for col in self.columns:
+            for row in self.rows:
+                concat.append(self.data[col + str(row)])
+
+        print("".join(concat))
+        return "".join(concat)
+
+    def getHashString(self, string):
+        hashedHexadoku = hashlib.sha256(''.join(string).encode('utf-8'))
         return hashedHexadoku.hexdigest()
 
 
