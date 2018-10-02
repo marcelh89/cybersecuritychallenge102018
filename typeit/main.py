@@ -9,7 +9,7 @@ print("fixPassword", fixPassword)
 print("fixPasswordAsText", fixPasswordAsText)
 """
 
-possiblePasswords = readFileIntoList("possiblepasswords")
+possiblePasswords = readFileIntoList("possiblekeys")
 
 
 
