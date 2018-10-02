@@ -11,7 +11,9 @@ pw muss mind länge \x93\x39\x02\x94\x83\x02\x82\xf3\xd3\x13 haben
 
 
 https://dencode.com/string/base64 für env ergibt chinesische schrift...
-㲨渊럡�モ�᫳㸤猌㖋뵽둃諩묠
+hex (utf16)--> 錹ʔ茂苳⏸팓�  --> engl. Yan Maozhen
+
+
 
 
 
